@@ -59,3 +59,60 @@
 .container__botao {
     display: none;
 }
+
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+/* Media query vai alterar quando chegar num determinado tamanho de tela (min quando for mobile e max para quando for desktop)(min-width ou max-width = tamanho da tela)*/
+@media screen and (min-width: 1024px) {
+    .container__titulo, 
+    .container__titulo--negrito{
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+    
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente{
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+/* Aqui colocou o menu do categoria para aparecer no tamanho de tela 1024 */
+    .opcoes__botao:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+/* 'Display: none' esconte alguns elementos */
+    .opcoes__botao {
+        display: none;
+    }
+}
