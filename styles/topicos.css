@@ -39,3 +39,10 @@
     }
     
 }
+
+@media screen and (min-width: 1728px) {
+
+    .topicos__lista, .topicos__titulo {
+        margin: 3em 28vw;        
+    }
+}
