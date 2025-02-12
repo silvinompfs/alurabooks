@@ -28,6 +28,12 @@
     font-size: 14px;
     font-weight: 700;
 }
+/* Ao passar o mouse por cima do link ele altera a cor de fundo e muda as bordas do botão */
+.topicos__link:hover {
+    background: var(--azul-degrade);
+    border-radius: 1em;
+    color: var(--laranja);
+}
 
 @media screen and (min-width: 1024px) {
     .topicos__titulo {
